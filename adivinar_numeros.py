@@ -3,7 +3,6 @@ import microbit
 import random
 
 lives = 3
-
 numero = 5
 
 x = random.randint(0, 9)
