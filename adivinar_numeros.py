@@ -2,6 +2,22 @@ import microbit
 
 import random
 
+mas = microbit.Image(
+    "00400:"
+    "00400:"
+    "44444:"
+    "00400:"
+    "00400"
+)
+
+menos = microbit.Image(
+    "00000:"
+    "00000:"
+    "04440:"
+    "00000:"
+    "00000:"
+)
+
 lives = 3
 numero = 5
 
@@ -28,11 +44,11 @@ while lives > 0:
             lives = lives - 1   
 
         if numero < x:
-            microbit.display.show("+")
+            microbit.display.show(mas)
             microbit.sleep(2000)
 
         if numero > x:
-            microbit.display.show("-")
+            microbit.display.show(menos)
             microbit.sleep(2000)
         
         if numero != x:
