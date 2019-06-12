@@ -54,7 +54,7 @@ while lives > 0:
         if numero != x:
             microbit.display.scroll("-1")
             microbit.display.show(microbit.Image.HEART)
-            microbit.sleep(2000)
+            microbit.sleep(1000)
 
     if microbit.pin1.is_touched and microbit.pin2.is_touched():
         lives = lives + 1
