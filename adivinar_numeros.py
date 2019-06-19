@@ -52,16 +52,18 @@ while lives > 0:
             microbit.sleep(2000)
         
         if numero != x:
-            microbit.display.scroll("-1")
+            microbit.display.scroll(lives)
             microbit.display.show(microbit.Image.HEART)
-            microbit.sleep(1000)
+            microbit.sleep(500)
 
-    if microbit.pin1.is_touched and microbit.pin2.is_touched():
-        lives = lives + 1
+    if microbit.pin1.is_touched() and microbit.pin2.is_touched():
+        if lives < 10:
+            lives = lives + 1
+            microbit.sleep(750)
               
     microbit.display.show(numero)
 
 while True:
     microbit.display.scroll("El numero era. . . . .")
     microbit.display.show(x)
-    microbit.sleep(2000)
+    microbit.sleep(10000)
