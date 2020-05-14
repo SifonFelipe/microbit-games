@@ -23,6 +23,7 @@ lista = ["casco", "espada", "armadura"]
 print(len(lista))```
 
 Que saben usar el coloreo de sintaxis del lenguaje que le digas.
+```
 
 ```html
 <h1>Bienvenido</h1>
